@@ -36,7 +36,7 @@ class FlutterWidgetBindingObserverImpl extends FlutterWidgetBindingObserver {
         return PageState.onResume;
       case AppLifecycleState.detached:
         return PageState.onDestroy;
-      case null:
+      case default:
         return PageState.attached;
     }
   }
